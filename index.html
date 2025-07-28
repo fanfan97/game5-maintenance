@@ -1,6 +1,82 @@
-<html>
-  <head></head>
-  <body>
-    MAINTENANCE!
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Under Maintenance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .maintenance-container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
+        }
+
+        .maintenance-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .maintenance-text {
+            color: #666;
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .maintenance-container {
+                padding: 30px 15px;
+            }
+            
+            .maintenance-text {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .maintenance-container {
+                padding: 20px 10px;
+                margin: 10px;
+            }
+            
+            .maintenance-text {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <!-- Replace 'maintenance.jpg' with your actual image filename -->
+        <img src="./assets/maintenance.jpeg" alt="Site Under Maintenance" class="maintenance-image">
+        
+        <!-- <div class="maintenance-text">
+            <p>We're currently performing scheduled maintenance to improve your experience.</p>
+            <p>Please check back soon!</p>
+        </div> -->
+    </div>
+</body>
 </html>
